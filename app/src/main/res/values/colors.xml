@@ -7,4 +7,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="tv_app_name">#001524</color>
+    <color name="card_tv">#81726A</color>
+    <color name="card_tv_2">#68534D</color>
+    <color name="card_bg">#8F8073</color>
+    <color name="card_Start">#F6F5AE</color>
 </resources>
