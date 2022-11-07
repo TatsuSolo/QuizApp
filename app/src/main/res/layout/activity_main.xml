@@ -14,9 +14,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Quiz App"
+        android:textStyle="bold"
         android:layout_marginBottom="30dp"
         android:textSize="30sp"
-        android:textStyle="bold"
         android:textColor="@color/tv_app_name"
         android:gravity="center"
 
@@ -39,6 +39,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Welcome"
+                android:textColorHint="@color/card_Start"
                 android:textColor="@color/card_tv"
                 android:textStyle="bold"
                 android:textSize="30sp"
@@ -50,38 +51,43 @@
                 android:layout_height="wrap_content"
                 android:text="Please Enter Your Name"
                 android:textColor="@color/card_tv_2"
+                android:layout_marginTop="5dp"
                 android:textSize="18sp"
                 android:gravity="center">
 
             </TextView>
+
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-                <androidx.appcompat.widget.AppCompatEditText
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTxt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Name"
                     android:ellipsize="start"
                     android:gravity="center_horizontal"
-                    android:textColor="@color/card_tv"
-                    android:textColorHint="@color/card_tv_2"
-                    tools:ignore="SpeakableTextPresentCheck">
+                    android:background="@color/white"
+                    android:textColorHint="@color/black"
+                    android:hint="Name"
+                    >
 
-                </androidx.appcompat.widget.AppCompatEditText>
+                </com.google.android.material.textfield.TextInputEditText>
             </com.google.android.material.textfield.TextInputLayout>
+
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/btn_start"
                 android:layout_marginTop="16dp"
-                android:background="@color/card_bg"
+                android:background="@drawable/custom_button"
+
                 android:text="Start"
                 android:textStyle="bold"
                 android:textSize="18sp"
-                android:textColor="@color/card_Start">
+                android:textColor="@color/black">
 
             </androidx.appcompat.widget.AppCompatButton>
 
